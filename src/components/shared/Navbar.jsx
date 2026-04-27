@@ -1,20 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import avatar from "@/assets/user.png";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
     <div className="container mx-auto flex justify-between items-center mt-5">
       <div></div>
-      <ul className="flex gap-10 justify-between">
+      <ul className="flex gap-10 justify-between text-gray-500">
         <li>
-          <Link href={"/"}>Home</Link>
+          <NavLink href={"/"}>Home</NavLink>
         </li>
         <li>
-          <Link href={"/about"}>About</Link>
+          <NavLink href={"/about"}>About</NavLink>
         </li>
         <li>
-          <Link href={"/career"}>Career</Link>
+          <NavLink href={"/career"}>Career</NavLink>
         </li>
       </ul>
 
