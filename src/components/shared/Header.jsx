@@ -6,9 +6,10 @@ const Header = () => {
   return (
     <div className="mx-auto text-center space-y-2 mt-5">
       <Image
+        loading="eager"
         src={logo}
-        width={300}
-        height={200}
+        width="auto"
+        height="auto"
         alt="logo"
         className="mx-auto"
       />

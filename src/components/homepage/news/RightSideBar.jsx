@@ -6,11 +6,11 @@ const RightSideBar = () => {
     <div>
       <h2 className=" mb-5 font-semibold text-xl">Login With</h2>
       <div className="flex flex-col gap-3 rounded-md">
-        <button className="flex gap-3 items-center justify-center py-3 btn shadow-md">
+        <button className="flex gap-3 items-center justify-center btn shadow-md">
           <FaGoogle />
           Login With Google
         </button>
-        <button className="flex gap-3 items-center justify-center  py-3 btn shadow-md">
+        <button className="flex gap-3 items-center justify-center btn shadow-md">
           <FaGithub />
           Login With Github
         </button>
