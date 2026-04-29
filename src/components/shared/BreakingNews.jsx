@@ -1,5 +1,8 @@
+import { getNewsByCategoryId } from "@/lib/data";
 import React from "react";
 import Marquee from "react-fast-marquee";
+
+const news = await getNewsByCategoryId("03");
 
 const BreakingNews = () => {
   return (
@@ -7,8 +10,13 @@ const BreakingNews = () => {
       <button className="btn btn-error">Latest News</button>
       <Marquee pauseOnHover>
         <div className="font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-          veniam?
+          {news.map((e, ind) => {
+            return (
+              <div className="flex flex-col gap-4 " key={ind}>
+                {e.title}
+              </div>
+            );
+          })}
         </div>
       </Marquee>
     </div>
