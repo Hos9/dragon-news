@@ -10,8 +10,8 @@
 
   "redirects": [
     {
-      "source": "/old-page",
-      "destination": "/new-page",
+      "source": "/",
+      "destination": "/category/01",
       "permanent": true
     }
   ]
